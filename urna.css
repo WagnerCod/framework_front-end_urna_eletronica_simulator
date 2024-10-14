@@ -1,0 +1,5 @@
+.table-bordered td {
+    color: white;
+    border: 10px solid #6b6b6b;
+    background: black;
+} 
