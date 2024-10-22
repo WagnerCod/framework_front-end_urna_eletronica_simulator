@@ -29,12 +29,15 @@
         <div class=" d-flex flex-column flex-md-row justify-content-center border">
             <div class="screen bg-light p-3">
                 <div id="dia">
-                   
+
                 </div>
                 <h4>Vereador</h4>
                 <div class="row justify-content-center">
-                    <div class="col numero-box">_</div>
-                    <div class="col numero-box">_</div>
+                    <div class="col numero-box" id="num1">_</div>
+                    <div class="col numero-box" id="num2">_</div>
+                </div>
+                <div>
+                    <p id="votoEmBranco"></p>
                 </div>
             </div>
 
@@ -66,9 +69,15 @@
                     </tbody>
                 </table>
                 <div class="row justify-content-center votar-buttons">
-                    <div class="col-4 branco text-center"><p>BRANCO</p></div>
-                    <div class="col-4 corrige text-center"><p>CORRIGE</p></div>
-                    <div class="col-4 confirma text-center" type="button" onclick="teste()"><p>CONFIRMAR</p></div>
+                    <div class="col-4 branco text-center" onclick="emBranco()">
+                        <p>BRANCO</p>
+                    </div>
+                    <div class="col-4 corrige text-center" onclick="corrige()">
+                        <p>CORRIGE</p>
+                    </div>
+                    <div class="col-4 confirma text-center" type="button" onclick="teste()">
+                        <p>CONFIRMAR</p>
+                    </div>
                 </div>
             </div>
         </div>
