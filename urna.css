@@ -1,5 +1,129 @@
+.urna {
+    border: 5px solid black;
+    background-color: rgb(175, 175, 174);
+}
+
+.screen {
+    width: 100%;
+    max-width: 400px;
+    border: 3px solid black;
+}
+
+.numero-box {
+    border: 2px solid black;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+    background: white;
+    padding: 10px;
+}
+
+.divJustica {
+    width: 100%;
+    max-width: 377px;
+}
+
+.tabela {
+    width: 90%;
+    margin-bottom: 1rem;
+    color: #212529;
+    margin: auto;
+}
+
 .table-bordered td {
     color: white;
-    border: 10px solid #6b6b6b;
+    border: 3px solid #6b6b6b;
     background: black;
-} 
+}
+
+.img_brasao {
+    width: 100px;
+}
+
+.divJusticaEleitoral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    White-space: nowrap
+}
+
+.votar-buttons {
+    margin: 20px 10px 0px 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    White-space: nowrap;
+    margin-left: -3px;
+}
+
+.branco {
+    background: white;
+    color: gray;
+    margin: 5px;
+    padding: 10px;
+}
+
+.branco p {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+
+
+}
+
+.corrige {
+    background: #f79c55;
+    color: rgb(79, 79, 79);
+    padding: 10px;
+    margin: 5px;
+}
+
+.corrige p {
+    font-weight: 600;
+}
+
+.confirma {
+    background: #41c974;
+    color: rgb(79, 79, 79);
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+}
+
+.confirma p {
+    width: 100%;
+    font-weight: 600;
+    padding: 0px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .urna {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .screen,
+    .divJustica {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .numero-box {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    .img_brasao {
+        width: 70px;
+    }
+
+    .branco,
+    .corrige,
+    .confirma {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+}

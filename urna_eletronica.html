@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -14,84 +14,65 @@
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-        crossorigin="anonymous"></script>
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+        </script>
     <link rel="stylesheet" href="urna.css">
-    <title>Urna Eletronica</title>
+    <script src="urna.js"></script>
+    <title>Urna Eletrônica</title>
 </head>
 
 <body>
-    <section class=".container">
+    <section class="container mt-4">
         <div class="text-center">
-            <p class="h3"> Simulador de urna eletronica</p>
+            <p class="h3">Simulador de Urna Eletrônica</p>
         </div>
-        <div style="border: 5px solid black; background-color: rgb(175, 175, 174);"
-            class="d-flex  justify-content-center">
-            <div style="width: 40%;">
-                <div class="my-5" style="border: 3px solid; background: azure;">
-                    <h4>Vereador</h4>
-                    <div class="row justify-content-center align-items-center g-4">
-                        <div class="col">|</div>
-                        <div class="col">|</div>
-                        <div class="col">|</div>
-                    </div>
+        <div class=" d-flex flex-column flex-md-row justify-content-center border">
+            <div class="screen bg-light p-3">
+                <div id="dia">
+                   
                 </div>
-
-            </div>
-
-            <div class="p-4 text-center">
-                <div class="bg-dark">
-                    <h4 class="text-light bg-dark">justica eleitoral</h4>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="table table-bordered">
-                        <table class="table">
-                            <!-- <thead>
-                                    <tr>
-                                        <th scope="col">Column 1</th>
-                                        <th scope="col">Column 2</th>
-                                        <th scope="col">Column 3</th>
-                                    </tr>
-                                </thead> -->
-                            <tbody>
-                                <tr class="">
-                                    <td scope="row">1</td>
-                                    <td>2</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr class="">
-                                    <td scope="row">4</td>
-                                    <td>5</td>
-                                    <td>6</td>
-                                </tr>
-                                <tr class="">
-                                    <td scope="row">7</td>
-                                    <td>8</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr class="">
-                                    <td scope="row"></td>
-                                    <td>0</td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="row justify-content-center align-items-center g-2">
-                            <div class="col-md-3">BRANCO</div>
-                            <div class="col-md-3">CORRIGE</div>
-                            <div class="col-md-3">CONFIRMAR</div>
-                        </div>
-                    </div>
-
-
-
-
+                <h4>Vereador</h4>
+                <div class="row justify-content-center">
+                    <div class="col numero-box">_</div>
+                    <div class="col numero-box">_</div>
                 </div>
             </div>
 
+            <div class="divJustica p-4 text-center bg-dark">
+                <div class="divJusticaEleitoral mb-3">
+                    <img class="img_brasao" src="imgs/brasao_brasil.png" alt="Brasão do Brasil">
+                    <h4 class="text-light">Justiça Eleitoral</h4>
+                </div>
+                <table class="table table-bordered text-center tabela">
+                    <tbody>
+                        <tr>
+                            <td><button value="1" class="btn-num">1</button></td>
+                            <td><button value="2" class="btn-num">2</button></td>
+                            <td><button value="3" class="btn-num">3</button></td>
+                        </tr>
+                        <tr>
+                            <td><button value="4" class="btn-num">4</button></td>
+                            <td><button value="5" class="btn-num">5</button></td>
+                            <td><button value="6" class="btn-num">6</button></td>
+                        </tr>
+                        <tr>
+                            <td><button value="7" class="btn-num">7</button></td>
+                            <td><button value="8" class="btn-num">8</button></td>
+                            <td><button value="9" class="btn-num">9</button></td>
+                        </tr>
+                        <td></td>
+                        <td><button value="0" class="btn-num">0</button></td>
+                        <td></td>
+                    </tbody>
+                </table>
+                <div class="row justify-content-center votar-buttons">
+                    <div class="col-4 branco text-center"><p>BRANCO</p></div>
+                    <div class="col-4 corrige text-center"><p>CORRIGE</p></div>
+                    <div class="col-4 confirma text-center" type="button" onclick="teste()"><p>CONFIRMAR</p></div>
+                </div>
+            </div>
         </div>
     </section>
-
 </body>
 
 </html>
